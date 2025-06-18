@@ -712,7 +712,19 @@ export default function LandingPage() {
               <p className="text-lg mb-4 italic">
                 &ldquo;Finally have a clear path going forward. Ana provides clear advice and actionable steps on how to grow your Substack. Thank you Ana!&rdquo;
               </p>
-              <p className="font-semibold">- Michael Wallace</p>
+              <p className="font-semibold">- Michael W.</p>
+            </div>
+
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg mb-4 italic">
+                &ldquo;I`m a big fan of Ana's content on growing a business. She really knows what she`s talking about &rdquo;
+              </p>
+              <p className="font-semibold">- Phillip H.</p>
             </div>
          
 
