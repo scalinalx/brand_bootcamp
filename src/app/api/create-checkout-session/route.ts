@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
       }, { status: 400 });
     }
 
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL;
 
     // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({
