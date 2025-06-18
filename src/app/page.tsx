@@ -722,7 +722,7 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-lg mb-4 italic">
-                &ldquo;I`m a big fan of Ana's content on growing a business. She really knows what she`s talking about &rdquo;
+                &ldquo;I`m a big fan of Ana`s content on growing a business. She really knows what she`s talking about &rdquo;
               </p>
               <p className="font-semibold">- Phillip H.</p>
             </div>
