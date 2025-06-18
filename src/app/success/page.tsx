@@ -76,8 +76,8 @@ function SuccessContent() {
                   3
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Join the Community</h3>
-                  <p className="text-gray-600">Get access to our exclusive participant community where you can network and ask questions.</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Join me on Substack</h3>
+                  <p className="text-gray-600">Get access to our exclusive Substack community where you can network and ask questions.</p>
                 </div>
               </div>
             </div>
