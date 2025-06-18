@@ -698,7 +698,7 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-lg mb-4 italic">
-                &ldquo;Ana transformed my murky notions of substack strategy into a nuanced understanding of how to grow. By applying her clear, practical guidance along with her detailed, actionable templates, I'm empowered to succeed. &rdquo;
+                &ldquo;Ana transformed my murky notions of substack strategy into a nuanced understanding of how to grow. By applying her clear, practical guidance along with her detailed, actionable templates, I`m empowered to succeed. &rdquo;
               </p>
               <p className="font-semibold">- Juliette</p>
             </div>
@@ -723,7 +723,7 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-lg mb-4 italic">
-                &ldquo;I finally see the possibility of monetizing here! I'm still grinning about how thorough and action oriented this Boot Camp was. &rdquo;
+                &ldquo;I finally see the possibility of monetizing here! I`m still grinning about how thorough and action oriented this Boot Camp was. &rdquo;
               </p>
               <p className="font-semibold">-  Adora</p>
             </div>
