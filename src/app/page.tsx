@@ -290,7 +290,7 @@ export default function LandingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-2xl mr-4 text-gray-600">•</span>
-                <span>No more wondering "what product should I create next?"</span>
+                <span>No more wondering &ldquo;what product should I create next?&rdquo;</span>
               </li>
               <li className="flex items-start">
                 <span className="text-2xl mr-4 text-gray-600">•</span>
@@ -298,7 +298,7 @@ export default function LandingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-2xl mr-4 text-gray-600">•</span>
-                <span>No more thinking you&rsquo;re "too small" for real income</span>
+                <span>No more thinking you&rsquo;re &ldquo;too small&rdquo; for real income</span>
               </li>
             </ul>
           </div>
@@ -325,7 +325,7 @@ export default function LandingPage() {
             
             <div className="text-center bg-red-50 rounded-lg p-6 mb-8 border-2 border-red-200">
               <p className="text-2xl font-bold text-red-700 italic">
-                "Why the hell are you talking about BRAND DEALS?!"
+                &ldquo;Why the hell are you talking about BRAND DEALS?!&rdquo;
               </p>
             </div>
             
@@ -334,7 +334,7 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-6">
-              Especially since, earlier today, you probably saw another newsletter about "10 Ways to Monetize Your Newsletter" that mentioned the same tired strategies: paid subscriptions, sponsored content, affiliate marketing.
+              Especially since, earlier today, you probably saw another newsletter about &ldquo;10 Ways to Monetize Your Newsletter&rdquo; that mentioned the same tired strategies: paid subscriptions, sponsored content, affiliate marketing.
             </p>
             
             <p className="text-xl mb-6">
@@ -665,7 +665,7 @@ export default function LandingPage() {
                 </p>
                 
                 <p className="text-xl text-white mb-12">
-                  Recorded if you can't attend live
+                  Recorded if you can&rsquo;t attend live
                 </p>
                 
                 <Link href="/lead-collection">
