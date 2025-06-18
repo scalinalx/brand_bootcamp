@@ -714,7 +714,7 @@ export default function LandingPage() {
               </p>
               <p className="font-semibold">- Michael Wallace</p>
             </div>
-          </div>
+         
 
           <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
               <div className="flex items-center mb-4">
