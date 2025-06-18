@@ -108,7 +108,7 @@ function LeadCollectionContent() {
           </div>
           <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-            <span className="text-sm text-gray-700">30-Day Guarantee</span>
+            <span className="text-sm text-gray-700">LIVE & Recorded</span>
           </div>
         </div>
 

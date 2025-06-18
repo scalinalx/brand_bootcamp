@@ -53,7 +53,7 @@ export default function LandingPage() {
               </Button>
             </Link>
             <div className="text-sm text-gray-500">
-              Only {formatPrice(WORKSHOP_PRICE)} • 30-Day Money Back Guarantee
+              Only {formatPrice(WORKSHOP_PRICE)} 
             </div>
           </div>
           
@@ -199,7 +199,7 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-8 font-semibold text-green-700">
-              I&rsquo;m here to tell you they do.
+              I&rsquo;m here to tell you they DO.
             </p>
             
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 mb-8 border border-green-200">
@@ -325,7 +325,7 @@ export default function LandingPage() {
             
             <div className="text-center bg-red-50 rounded-lg p-6 mb-8 border-2 border-red-200">
               <p className="text-2xl font-bold text-red-700 italic">
-                &ldquo;Why the hell are you talking about BRAND DEALS?!&rdquo;
+                &ldquo;Why the heck are you talking about BRAND DEALS?!&rdquo;
               </p>
             </div>
             
@@ -418,7 +418,7 @@ export default function LandingPage() {
               </p>
               
               <p className="text-xl font-bold text-gray-800">
-                How do you explain Instagram accounts with 8K followers getting monthly retainers?
+                How do you explain LinkedIn accounts with 4.5K followers getting monthly retainers?
               </p>
               
               <div className="mt-8">
@@ -604,7 +604,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
-                    <span>Platform-specific strategies for newsletter, LinkedIn, Twitter, and Instagram creators</span>
+                    <span>Platform-specific strategies for Substack, LinkedIn, Twitter, and Instagram creators</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
@@ -639,7 +639,7 @@ export default function LandingPage() {
                   </div>
                   
                   <p className="text-xl text-gray-700 mb-6 leading-relaxed font-semibold">
-                    June 24th at 2:00 P.M. EST
+                    June 24th at 10:00 A.M. EST
                   </p>
                   
                   <p className="text-lg text-gray-600 leading-relaxed">
@@ -657,7 +657,7 @@ export default function LandingPage() {
                 </h2>
                 
                 <p className="text-2xl text-white mb-6 font-medium">
-                  Live workshop: <span className="font-bold">June 24th, 2pm EST</span>
+                  Live workshop: <span className="font-bold">June 24th, 10 am EST</span>
                 </p>
                 
                 <p className="text-xl text-white mb-6">
@@ -698,9 +698,9 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-lg mb-4 italic">
-                &ldquo;This workshop completely changed how I approach my business. The strategies are pure gold!&rdquo;
+                &ldquo;Ana transformed my murky notions of substack strategy into a nuanced understanding of how to grow. By applying her clear, practical guidance along with her detailed, actionable templates, I'm empowered to succeed. &rdquo;
               </p>
-              <p className="font-semibold">- Sarah Johnson, Entrepreneur</p>
+              <p className="font-semibold">- Juliette</p>
             </div>
             
             <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
@@ -710,9 +710,22 @@ export default function LandingPage() {
                 ))}
               </div>
               <p className="text-lg mb-4 italic">
-                &ldquo;Incredible value! I implemented what I learned and saw results within 48 hours.&rdquo;
+                &ldquo;Finally have a clear path going forward. Ana provides clear advice and actionable steps on how to grow your Substack. Thank you Ana!&rdquo;
               </p>
-              <p className="font-semibold">- Michael Chen, Marketing Director</p>
+              <p className="font-semibold">- Michael Wallace</p>
+            </div>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
+              <div className="flex items-center mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-lg mb-4 italic">
+                &ldquo;I finally see the possibility of monetizing here! I'm still grinning about how thorough and action oriented this Boot Camp was. &rdquo;
+              </p>
+              <p className="font-semibold">-  Adora</p>
             </div>
           </div>
           
@@ -750,7 +763,7 @@ export default function LandingPage() {
           </Link>
           
           <p className="text-sm text-gray-500 mt-4">
-            30-day money-back guarantee • Secure checkout • Instant access
+            LIVE & Recording access • Secure checkout • Instant access
           </p>
         </div>
       </section>
