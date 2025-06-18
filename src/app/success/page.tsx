@@ -155,7 +155,11 @@ function SuccessContent() {
               Contact Support
             </Button>
             
-            <Button variant="primary" size="lg">
+            <Button 
+              variant="primary" 
+              size="lg"
+              onClick={() => window.open('https://howwegrowtoday.substack.com/', '_blank')}
+            >
               Join Community
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
