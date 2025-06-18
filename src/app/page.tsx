@@ -22,7 +22,7 @@ export default function LandingPage() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            The Income Stream You're Ignoring: 
+            The Income Stream You&rsquo;re Ignoring: 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600"> How Small Creators Make $3K+ Monthly From Brand Partnerships</span>
           </h1>
           
@@ -80,7 +80,7 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
             <p className="text-xl mb-6">
-              If you're reading this, you likely know how difficult it can be to make consistent money as a creator.
+              If you&rsquo;re reading this, you likely know how difficult it can be to make consistent money as a creator.
             </p>
             
             <p className="text-xl mb-6">
@@ -88,7 +88,7 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-6">
-              If you're like most creators, you use the "hope strategy" to monetize your content:
+              If you&rsquo;re like most creators, you use the &ldquo;hope strategy&rdquo; to monetize your content:
             </p>
             
             <div className="bg-white rounded-lg p-6 mb-8 border-l-4 border-blue-500">
@@ -102,7 +102,7 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-6">
-              The problem is, these income streams put you at the mercy of your audience's buying decisions. When your creator business is driven by subscriptions and course sales, you're always wondering if this month will be the month everything falls apart.
+              The problem is, these income streams put you at the mercy of your audience&rsquo;s buying decisions. When your creator business is driven by subscriptions and course sales, you&rsquo;re always wondering if this month will be the month everything falls apart.
             </p>
             
             <p className="text-xl mb-6">
@@ -161,7 +161,7 @@ export default function LandingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-2xl mr-4 text-gray-600">•</span>
-                <span>Feel like you're one bad month away from financial disaster</span>
+                <span>Feel like you&rsquo;re one bad month away from financial disaster</span>
               </li>
             </ul>
           </div>
@@ -186,7 +186,7 @@ export default function LandingPage() {
             
             <div className="bg-blue-50 rounded-lg p-6 mb-8 border-l-4 border-blue-500">
               <p className="text-xl font-semibold text-blue-900 mb-4">
-                Answer: Because deep down, you don't think you're "big enough" for other income streams.
+                Answer: Because deep down, you don&rsquo;t think you&rsquo;re &ldquo;big enough&rdquo; for other income streams.
               </p>
             </div>
             
@@ -195,20 +195,20 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-6">
-              At this point, you may be skeptical that brands would even want to work with "small" creators.
+              At this point, you may be skeptical that brands would even want to work with &ldquo;small&rdquo; creators.
             </p>
             
             <p className="text-xl mb-8 font-semibold text-green-700">
-              I'm here to tell you they do.
+              I&rsquo;m here to tell you they do.
             </p>
             
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8 mb-8 border border-green-200">
               <p className="text-xl mb-6">
-                Slowly over the last 18 months, I've been adding brand partnerships to my income mix. ONLY quality partnerships. The time-wasters get ignored.
+                Slowly over the last 18 months, I&rsquo;ve been adding brand partnerships to my income mix. ONLY quality partnerships. The time-wasters get ignored.
               </p>
               
               <p className="text-xl mb-6">
-                And you've seen the numbers.
+                And you&rsquo;ve seen the numbers.
               </p>
               
               <div className="text-center bg-white rounded-lg p-6 border-2 border-green-300 mb-6">
@@ -298,7 +298,7 @@ export default function LandingPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-2xl mr-4 text-gray-600">•</span>
-                <span>No more thinking you're "too small" for real income</span>
+                <span>No more thinking you&rsquo;re "too small" for real income</span>
               </li>
             </ul>
           </div>
@@ -311,7 +311,7 @@ export default function LandingPage() {
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
             <div className="bg-blue-50 rounded-xl p-8 mb-8 border border-blue-200">
               <p className="text-xl mb-6 text-blue-900 font-medium">
-                I'm offering you a world where you diversify your creator income. You can build the sustainable creator business you actually want, working with brands that respect your audience, and - frankly - making a lot more money doing it.
+                I&rsquo;m offering you a world where you diversify your creator income. You can build the sustainable creator business you actually want, working with brands that respect your audience, and - frankly - making a lot more money doing it.
               </p>
               
               <p className="text-xl font-semibold text-blue-800">
@@ -320,7 +320,7 @@ export default function LandingPage() {
             </div>
             
             <p className="text-xl mb-6">
-              And if you've spent much time in the creator economy, you're probably wondering...
+              And if you&rsquo;ve spent much time in the creator economy, you&rsquo;re probably wondering...
             </p>
             
             <div className="text-center bg-red-50 rounded-lg p-6 mb-8 border-2 border-red-200">
@@ -330,7 +330,7 @@ export default function LandingPage() {
             </div>
             
             <p className="text-xl mb-6">
-              It's a fair question.
+              It&rsquo;s a fair question.
             </p>
             
             <p className="text-xl mb-6">
@@ -338,7 +338,7 @@ export default function LandingPage() {
             </p>
             
             <p className="text-xl mb-6">
-              If you're not seeing what I'm seeing, talking about brand partnerships might seem impossible for your size.
+              If you&rsquo;re not seeing what I&rsquo;m seeing, talking about brand partnerships might seem impossible for your size.
             </p>
             
             <div className="bg-yellow-50 rounded-lg p-6 mb-8 border-l-4 border-yellow-400">
@@ -347,7 +347,7 @@ export default function LandingPage() {
               </p>
               
               <p className="text-xl mb-4 text-yellow-900">
-                In guru world, small creators can't get brand deals.
+                In guru world, small creators can&rsquo;t get brand deals.
               </p>
               
               <p className="text-xl font-semibold text-yellow-800">
@@ -356,7 +356,7 @@ export default function LandingPage() {
             </div>
             
             <p className="text-xl mb-6">
-              But if that's true...
+              But if that&rsquo;s true...
             </p>
             
             <p className="text-xl mb-8 font-semibold">
@@ -365,7 +365,7 @@ export default function LandingPage() {
             
             <div className="text-center bg-gradient-to-r from-green-100 to-emerald-100 rounded-xl p-8 border-2 border-green-300">
               <p className="text-4xl font-bold text-green-700 mb-4">
-                The $5,250 I've made this month from brand partnerships?
+                The $5,250 I&rsquo;ve made this month from brand partnerships?
               </p>
               <div className="w-16 h-1 bg-green-500 mx-auto mb-6"></div>
               
@@ -462,7 +462,7 @@ export default function LandingPage() {
             {/* Brand Reality Check Section */}
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-xl mb-6 text-gray-700">
-                Here's a crazy idea I want to float by you.
+                Here&rsquo;s a crazy idea I want to float by you.
               </p>
               
               <p className="text-xl mb-6 text-gray-700">
@@ -513,15 +513,15 @@ export default function LandingPage() {
               {/* Part 1 */}
               <div className="bg-gray-100 rounded-lg p-8 mb-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Part 1 -- Building Your "Brand Partnership Foundation"
+                  Part 1 -- Building Your &ldquo;Brand Partnership Foundation&rdquo;
                 </h3>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Over my years building a newsletter to 50K+ subscribers and working with dozens of brands, I've developed a system for attracting the right partnerships.
+                  Over my years building a newsletter to 50K+ subscribers and working with dozens of brands, I&rsquo;ve developed a system for attracting the right partnerships.
                 </p>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  After Part 1 of this workshop, you'll know exactly how to position yourself as someone brands want to work with, regardless of your follower count.
+                  After Part 1 of this workshop, you&rsquo;ll know exactly how to position yourself as someone brands want to work with, regardless of your follower count.
                 </p>
                 
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -532,7 +532,7 @@ export default function LandingPage() {
               {/* Part 2 */}
               <div className="bg-gray-100 rounded-lg p-8 mb-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Part 2 -- Creating Your "Brand Magnet" Content Strategy
+                  Part 2 -- Creating Your &ldquo;Brand Magnet&rdquo; Content Strategy
                 </h3>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -540,11 +540,11 @@ export default function LandingPage() {
                 </p>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  If you're creating random content without strategy, you'll either get ignored by brands or attract the wrong ones entirely.
+                  If you&rsquo;re creating random content without strategy, you&rsquo;ll either get ignored by brands or attract the wrong ones entirely.
                 </p>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  In Part 2, we'll build your content strategy that attracts quality brand partners - how to demonstrate your value before they even reach out, how to show brands you understand your audience, and how to create partnership opportunities even if you've never worked with a brand before.
+                  In Part 2, we&rsquo;ll build your content strategy that attracts quality brand partners - how to demonstrate your value before they even reach out, how to show brands you understand your audience, and how to create partnership opportunities even if you&rsquo;ve never worked with a brand before.
                 </p>
                 
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -559,7 +559,7 @@ export default function LandingPage() {
                 </h3>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  You're now getting brand inquiries and need to make smart decisions:
+                  You&rsquo;re now getting brand inquiries and need to make smart decisions:
                 </p>
                 
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -575,32 +575,32 @@ export default function LandingPage() {
                 </p>
                 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  We'll cover all this in an efficient 90 minute workshop with Q&A throughout to remove confusion.
+                  We&rsquo;ll cover all this in an efficient 90 minute workshop with Q&A throughout to remove confusion.
                 </p>
               </div>
               
               {/* Hidden Gems Section */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-8 border border-blue-200">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  Other "hidden gems" in this workshop...
+                  Other &ldquo;hidden gems&rdquo; in this workshop...
                 </h3>
                 
                 <ul className="space-y-4 text-lg text-gray-700">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
-                    <span>How to price yourself when you don't have "influencer rates" to reference - this alone will prevent you from leaving thousands on the table</span>
+                    <span>How to price yourself when you don&rsquo;t have &ldquo;influencer rates&rdquo; to reference - this alone will prevent you from leaving thousands on the table</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
-                    <span>The media kit template that gets responses (even if you think your numbers are "too small")</span>
+                    <span>The media kit template that gets responses (even if you think your numbers are &ldquo;too small&rdquo;)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
-                    <span>8 "Bad Brand Red Flags" that nightmare brand partners flash - these aren't obvious, but when you see them, run</span>
+                    <span>8 &ldquo;Bad Brand Red Flags&rdquo; that nightmare brand partners flash - these aren&rsquo;t obvious, but when you see them, run</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
-                    <span>8 "Quality Brand Green Flags" that signal partnerships worth pursuing - also not obvious, but when you spot these, say yes immediately</span>
+                    <span>8 &ldquo;Quality Brand Green Flags&rdquo; that signal partnerships worth pursuing - also not obvious, but when you spot these, say yes immediately</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-3 mt-1">•</span>
@@ -732,8 +732,8 @@ export default function LandingPage() {
             Limited Seats Available
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            We&apos;re keeping this workshop small to ensure everyone gets personal attention. 
-            Once we&apos;re full, the next opportunity won&apos;t be for months.
+            We&rsquo;re keeping this workshop small to ensure everyone gets personal attention. 
+            Once we&rsquo;re full, the next opportunity won&rsquo;t be for months.
           </p>
           
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md mx-auto mb-8">
