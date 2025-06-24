@@ -27,12 +27,12 @@ export default function OfferExpiredPage() {
             </div>
             
             <a 
-              href="https://howwegrow.substack.com" 
+              href="https://howwegrowtoday.substack.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              Visit How We Grow
+              Join How We Grow
               <ExternalLink className="ml-2 w-5 h-5" />
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function OfferExpiredPage() {
 
         {/* Footer */}
         <div className="mt-12 text-gray-500 text-sm">
-          <p>&copy; 2024 Ana&apos;s Brand Bootcamp. All rights reserved.</p>
+          <p>&copy; 2025 How We Grow LIVE Bootcamps. All rights reserved.</p>
         </div>
       </div>
     </div>
