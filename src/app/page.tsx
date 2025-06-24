@@ -1,14 +1,51 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
-import { CheckCircle, Users, Clock, Star, ArrowRight } from 'lucide-react';
+import { CheckCircle, Users, Clock, Star, ArrowRight, Shield } from 'lucide-react';
 import { formatPrice } from '@/utils/validation';
+import { LeadForm } from '@/components/forms/LeadForm';
+import type { Lead, ApiResponse, StripeCheckoutSession } from '@/types';
 
 const WORKSHOP_PRICE = 9700; // $97.00 in cents
 
 export default function LandingPage() {
+  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleLeadSuccess = async (leadData: Lead) => {
+    setIsProcessingPayment(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ leadId: leadData.id }),
+      });
+
+      const result: ApiResponse<StripeCheckoutSession> = await response.json();
+
+      if (result.success && result.data) {
+        window.location.href = result.data.url;
+      } else {
+        setError(result.error || 'Failed to create checkout session');
+        setIsProcessingPayment(false);
+      }
+    } catch {
+      setError('Network error. Please try again.');
+      setIsProcessingPayment(false);
+    }
+  };
+
+  const handleLeadError = (errorMessage: string) => {
+    setError(errorMessage);
+  };
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Hero Section */}
@@ -46,7 +83,7 @@ export default function LandingPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link href="/lead-collection">
+            <Link href="#form-section">
               <Button size="lg" className="text-xl px-10 py-5">
                 Secure Your Spot Now
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -245,9 +282,9 @@ export default function LandingPage() {
                 <p className="text-lg mb-6 opacity-90">
                   Join the live workshop and discover how to land your first $2K+ brand partnership
                 </p>
-                <Link href="/lead-collection">
+                <Link href="#form-section">
                   <Button variant="secondary" size="lg" className="text-xl px-8 py-4 bg-white text-blue-600 hover:bg-gray-100">
-                    Secure Your Workshop Seat
+                    Save Your Seat Now! (Only 48H Left!)
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
@@ -668,7 +705,7 @@ export default function LandingPage() {
                   Recorded if you can&rsquo;t attend live
                 </p>
                 
-                <Link href="/lead-collection">
+                <Link href="#form-section">
                   <button className="bg-red-600 hover:bg-red-700 text-white text-2xl font-bold px-12 py-6 rounded-lg mb-6 transition-colors duration-200 inline-block">
                     Get Your Workshop Seat - $97
                   </button>
@@ -741,7 +778,7 @@ export default function LandingPage() {
             </div>
           </div>
           
-          <Link href="/lead-collection">
+          <Link href="#form-section">
             <Button variant="secondary" size="lg" className="text-xl px-10 py-5">
               Join Them Today
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -767,7 +804,7 @@ export default function LandingPage() {
             <div className="text-green-600 font-semibold">Save $200 Today Only!</div>
           </div>
           
-          <Link href="/lead-collection">
+          <Link href="#form-section">
             <Button size="lg" className="text-xl px-10 py-5 animate-pulse">
               Claim Your Spot Now
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -777,6 +814,57 @@ export default function LandingPage() {
           <p className="text-sm text-gray-500 mt-4">
             LIVE & Recording access • Secure checkout • Instant access
           </p>
+        </div>
+      </section>
+
+      {/* Lead Form Section */}
+      <section id="form-section" className="py-16 bg-gray-50 scroll-mt-20">
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Save Your Seat Now! (Only 48H Left!)
+            </h2>
+            <p className="text-xl text-gray-600">
+              Just one step away from transforming your skills
+            </p>
+          </div>
+
+          {/* Error Message */}
+          {error && (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
+              <p className="text-red-800">{error}</p>
+            </div>
+          )}
+
+          <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+            {isProcessingPayment ? (
+              <div className="text-center py-12">
+                <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Redirecting to Secure Checkout...
+                </h3>
+                <p className="text-gray-600">
+                  Please wait while we prepare your payment page
+                </p>
+              </div>
+            ) : (
+              <>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
+                  Your Information
+                </h3>
+                <LeadForm onSuccess={handleLeadSuccess} onError={handleLeadError} />
+              </>
+            )}
+          </div>
+
+          <div className="text-center text-sm text-gray-500 space-y-2">
+            <p className="flex items-center justify-center">
+              <Shield className="w-4 h-4 mr-2 text-green-600" />
+              Your information is secure and will never be shared
+            </p>
+            <p>💳 Powered by Stripe - Industry-leading payment security</p>
+            <p>📧 You&apos;ll receive instant access details via email</p>
+          </div>
         </div>
       </section>
     </div>

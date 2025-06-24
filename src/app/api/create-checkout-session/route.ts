@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
       ],
       mode: 'payment',
       success_url: `${baseUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${baseUrl}/lead-collection?canceled=true`,
+      cancel_url: baseUrl,
       customer_email: lead.email,
       metadata: {
         leadId: leadId,
