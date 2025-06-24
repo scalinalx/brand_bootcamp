@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Clock, ArrowRight, ExternalLink } from 'lucide-react';
+import { Clock, ExternalLink } from 'lucide-react';
 
 export default function OfferExpiredPage() {
   return (
@@ -20,7 +19,7 @@ export default function OfferExpiredPage() {
           
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-red-100 mb-8">
             <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-              For more info about Ana's next live bootcamp check out
+              For more info about Ana&apos;s next live bootcamp check out
             </p>
             
             <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-6">
@@ -42,7 +41,7 @@ export default function OfferExpiredPage() {
         {/* Additional Info */}
         <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
           <p className="text-blue-800 font-medium mb-2">
-            Don't miss out next time!
+            Don&apos;t miss out next time!
           </p>
           <p className="text-blue-700">
             Subscribe to How We Grow to be the first to know about upcoming workshops and exclusive opportunities.
@@ -51,7 +50,7 @@ export default function OfferExpiredPage() {
 
         {/* Footer */}
         <div className="mt-12 text-gray-500 text-sm">
-          <p>© 2024 Ana's Brand Bootcamp. All rights reserved.</p>
+          <p>&copy; 2024 Ana&apos;s Brand Bootcamp. All rights reserved.</p>
         </div>
       </div>
     </div>
