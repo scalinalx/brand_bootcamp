@@ -16,30 +16,8 @@ export default function LandingPage() {
   const [error, setError] = useState<string | null>(null);
 
   const handleLeadSuccess = async (leadData: Lead) => {
-    setIsProcessingPayment(true);
-    setError(null);
-
-    try {
-      const response = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ leadId: leadData.id }),
-      });
-
-      const result: ApiResponse<StripeCheckoutSession> = await response.json();
-
-      if (result.success && result.data) {
-        window.location.href = result.data.url;
-      } else {
-        setError(result.error || 'Failed to create checkout session');
-        setIsProcessingPayment(false);
-      }
-    } catch {
-      setError('Network error. Please try again.');
-      setIsProcessingPayment(false);
-    }
+    // Redirect to offer expired page instead of processing payment
+    window.location.href = '/offer-expired';
   };
 
   const handleLeadError = (errorMessage: string) => {
@@ -83,7 +61,7 @@ export default function LandingPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link href="#form-section">
+            <Link href="/offer-expired">
               <Button size="lg" className="text-xl px-10 py-5">
                 Secure Your Spot Now
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -282,7 +260,7 @@ export default function LandingPage() {
                 <p className="text-lg mb-6 opacity-90">
                   Join the live workshop and discover how to land your first $2K+ brand partnership
                 </p>
-                <Link href="#form-section">
+                <Link href="/offer-expired">
                   <Button variant="secondary" size="lg" className="text-xl px-8 py-4 bg-white text-blue-600 hover:bg-gray-100">
                     Save Your Seat Now! (Only 48H Left!)
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -705,7 +683,7 @@ export default function LandingPage() {
                   Recorded if you can&rsquo;t attend live
                 </p>
                 
-                <Link href="#form-section">
+                <Link href="/offer-expired">
                   <button className="bg-red-600 hover:bg-red-700 text-white text-2xl font-bold px-12 py-6 rounded-lg mb-6 transition-colors duration-200 inline-block">
                     Get Your Workshop Seat - $97
                   </button>
@@ -778,7 +756,7 @@ export default function LandingPage() {
             </div>
           </div>
           
-          <Link href="#form-section">
+          <Link href="/offer-expired">
             <Button variant="secondary" size="lg" className="text-xl px-10 py-5">
               Join Them Today
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -804,7 +782,7 @@ export default function LandingPage() {
             <div className="text-green-600 font-semibold">Save $200 Today Only!</div>
           </div>
           
-          <Link href="#form-section">
+          <Link href="/offer-expired">
             <Button size="lg" className="text-xl px-10 py-5 animate-pulse">
               Claim Your Spot Now
               <ArrowRight className="ml-2 w-5 h-5" />
