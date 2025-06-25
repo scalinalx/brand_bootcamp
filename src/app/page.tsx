@@ -14,6 +14,7 @@ const WORKSHOP_PRICE = 9700; // $97.00 in cents
 export default function LandingPage() {
   const [error, setError] = useState<string | null>(null);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleLeadSuccess = async (_leadData: Lead) => {
     // Redirect to offer expired page instead of processing payment
     window.location.href = '/offer-expired';
