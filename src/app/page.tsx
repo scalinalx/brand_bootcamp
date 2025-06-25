@@ -7,12 +7,11 @@ import { Button } from '@/components/ui/Button';
 import { CheckCircle, Users, Clock, Star, ArrowRight, Shield } from 'lucide-react';
 import { formatPrice } from '@/utils/validation';
 import { LeadForm } from '@/components/forms/LeadForm';
-import type { Lead, ApiResponse, StripeCheckoutSession } from '@/types';
+import type { Lead } from '@/types';
 
 const WORKSHOP_PRICE = 9700; // $97.00 in cents
 
 export default function LandingPage() {
-  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleLeadSuccess = async (leadData: Lead) => {
@@ -815,24 +814,10 @@ export default function LandingPage() {
           )}
 
           <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
-            {isProcessingPayment ? (
-              <div className="text-center py-12">
-                <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Redirecting to Secure Checkout...
-                </h3>
-                <p className="text-gray-600">
-                  Please wait while we prepare your payment page
-                </p>
-              </div>
-            ) : (
-              <>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
-                  Your Information
-                </h3>
-                <LeadForm onSuccess={handleLeadSuccess} onError={handleLeadError} />
-              </>
-            )}
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
+              Your Information
+            </h3>
+            <LeadForm onSuccess={handleLeadSuccess} onError={handleLeadError} />
           </div>
 
           <div className="text-center text-sm text-gray-500 space-y-2">
